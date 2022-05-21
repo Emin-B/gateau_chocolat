@@ -1,0 +1,217 @@
+
+* {
+    overflow: auto;
+}
+
+body {
+    background-color: #8BA1BB;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+
+p.categorie {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 8px 18px;
+    margin-bottom: 0;
+    font-weight: bold;
+    /* position: absolute; */
+
+}
+
+div.categorie {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    /* background-color: black; */
+    display: block;
+    position: relative; 
+    top: -62px;
+}
+
+.centre {
+    text-align: center;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.contenu {
+    background-color: white;
+    margin: 20px 8px 10px 8px;
+    padding: 10px;
+    box-shadow:  0px 0px 12px;
+    overflow: visible;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+p.description{
+    text-align: center;
+    max-width: 400px;
+    /* background-color: yellow; */
+    display: inline-block;
+    font-size: 14 px;
+}
+
+.separateur {
+    height: 1px;
+    background-color: black;
+    width: 100px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+}
+
+div.info {
+    position: relative;
+}
+
+table.info {
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #6C829DC0;
+    color: white;
+}
+
+table.info td {
+    text-align: center;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+table.info th {
+    font-size: 14px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+
+img.info {
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: gainsboro;
+}
+
+div.colonne {
+    width: 100%;
+}
+
+div.colonne h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6C829D ;
+    padding-bottom: 5px;
+}
+
+div.colonne1 {
+    display: inline-block;
+}
+
+.ingredients {
+    border-bottom: 2px dashed #8BA1BB;
+    padding-bottom: 12px;
+}
+
+div.ingredients p {
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 8px 0;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+table.preparation p.numero{
+    background-color: #6C829D;
+    color: white;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    vertical-align: top;
+    margin: 0;
+}
+
+table.preparation td {
+    vertical-align: baseline;
+}
+
+table.preparation td.preparation_etape {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 15px; 
+}
+
+table.preparation tr {
+    height: 45px;
+}
+
+@media only screen and (min-width: 768px) {
+    .contenu {
+        background-color: white;
+        margin: 60px 60px 80px 60px;
+        padding: 30px;
+        min-width: 500px;
+        box-shadow:  0px 0px 12px;
+        overflow: visible;
+    }
+
+    div.info {
+        position: relative;
+    }
+    
+    table.info {
+        height: 80px;
+    }
+    
+    table.info td {
+        font-size: 14px;
+    }
+    
+    table.info th {
+        font-size: 16px;
+    }
+
+    div.colonne {
+        width: 45%;
+        margin-top: 20px;
+    }
+    
+    div.colonne1 {
+        margin-right: 10%;
+    }
+    
+    div.colonne2 {
+        float: right;
+    }
+
+    .ingredients {
+        border-bottom: unset;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .contenu {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 645px;
+    }
+}
